@@ -1,0 +1,33 @@
+class Main{
+    public static void main(String[] args){
+        int[] arr={2,3,5,7,8,90,99,8};
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]<arr[i-1]){
+               System.out.print("Not sorted");
+               return;
+            }
+        }
+        System.out.print("Sorted");
+        
+        
+    }
+}
+
+2nd appproach:
+Mine 
+
+class Main{
+    public static void main(String[] args){
+        int[] arr={2,3,5,7,8,90,99};
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>=arr[i-1]){
+            }
+            else{
+                System.out.print("Not sorted");
+                return;
+            }
+        }
+        System.out.print("Sorted");
+        
+    }
+}
