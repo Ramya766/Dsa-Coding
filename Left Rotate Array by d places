@@ -80,3 +80,45 @@ class Main{
 }
 
 
+To know diff b/w left and right rotate of the array
+
+🔁 1. Left Rotation by 2
+Goal:
+Move the first 2 elements to the end of the array.
+
+Step-by-step:
+Original: {10, 20, 30, 40, 50, 60, 70}
+
+After left rotation by 2:
+→ {30, 40, 50, 60, 70, 10, 20}
+
+Explanation:
+
+Remove first 2: [10, 20]
+
+Append them to end: [30, 40, 50, 60, 70] + [10, 20]
+
+🔁 2. Right Rotation by 2
+Goal:
+Move the last 2 elements to the start of the array.
+
+Step-by-step:
+Original: {10, 20, 30, 40, 50, 60, 70}
+
+After right rotation by 2:
+→ {60, 70, 10, 20, 30, 40, 50}
+
+Explanation:
+
+Remove last 2: [60, 70]
+
+Put them at front: [60, 70] + [10, 20, 30, 40, 50]
+
+🔍 Visual Summary
+Rotation	Result
+Left (2)	{30, 40, 50, 60, 70, 10, 20}
+Right (2)	{60, 70, 10, 20, 30, 40, 50}
+
+
+
+
