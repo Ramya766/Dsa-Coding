@@ -1,0 +1,43 @@
+Brute force approach:Using Set
+
+import java.util.Set;
+import java.util.TreeSet;
+class Main{
+    public static void main(String[] args){
+        int arr[]={1,1,2,2,2,3,3,4};
+        int n=arr.length;
+        Set <Integer> dupli =new TreeSet<>();
+        for(int i=0;i<n;i++){
+            dupli.add(arr[i]);
+        }
+        for (int duplicate:dupli){
+            System.out.print(duplicate+" ");
+           
+        }
+        System.out.println("\n"+dupli.size());
+    }
+}
+Tc=Onlogn+n
+Sc=O(N)
+
+Optimal:Two pointer
+import java.util.Set;
+import java.util.TreeSet;
+class Main{
+    public static void main(String[] args){
+        int arr[]={1,1,2,2,2,3,3,4};
+        int n=arr.length;
+        int i=0;
+        for(int j=1;j<n;j++){
+            if(arr[j]!=arr[i]){
+                arr[i+1]=arr[j];
+                i++;
+            }
+        }
+        for(int k=0;k<=i;k++){
+            System.out.print(arr[k]+" ");
+        }
+    }
+}
+TC:O(N)
+SC:O(1)
